@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Join QuickFix - Become a Technician</title>
+  <meta name="description" content="Join QuickFix and become a tech hero! If you're a student skilled in tech support, apply to help others and earn while you learn.">
+  <meta name="keywords" content="join tech startup, become technician, student part time tech job, laptop repair student, QuickFix recruitment">
+  <meta name="author" content="QuickFix Team">
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body {
+      background: linear-gradient(135deg, #0a0f1c 0%, #1a1f3a 50%, #0f172a 100%);
+      color: white;
+      font-family: 'Poppins', sans-serif;
+      padding: 60px 20px;
+      text-align: center;
+      position: relative;
+      overflow-x: hidden;
+    }
+
+    body::before {
+      content: '';
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background:
+        radial-gradient(circle at 20% 30%, rgba(59, 130, 246, 0.1) 0%, transparent 50%),
+        radial-gradient(circle at 80% 70%, rgba(139, 92, 246, 0.1) 0%, transparent 50%),
+        radial-gradient(circle at 40% 80%, rgba(16, 185, 129, 0.1) 0%, transparent 50%);
+      animation: morphingBackground 12s ease-in-out infinite;
+      z-index: -2;
+    }
+
+    body::after {
+      content: '';
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-image:
+        radial-gradient(circle at 10% 20%, rgba(59, 130, 246, 0.2) 0%, transparent 1%),
+        radial-gradient(circle at 90% 30%, rgba(139, 92, 246, 0.2) 0%, transparent 1%),
+        radial-gradient(circle at 30% 90%, rgba(16, 185, 129, 0.2) 0%, transparent 1%),
+        radial-gradient(circle at 70% 10%, rgba(59, 130, 246, 0.2) 0%, transparent 1%),
+        radial-gradient(circle at 50% 50%, rgba(139, 92, 246, 0.15) 0%, transparent 1%),
+        radial-gradient(circle at 15% 70%, rgba(16, 185, 129, 0.15) 0%, transparent 1%);
+      animation: floatingParticles 15s linear infinite;
+      z-index: -1;
+    }
+
+    @keyframes morphingBackground {
+      0%, 100% {
+        transform: scale(1) rotate(0deg);
+        opacity: 1;
+        filter: hue-rotate(0deg);
+      }
+      25% {
+        transform: scale(1.05) rotate(2deg);
+        opacity: 0.8;
+        filter: hue-rotate(90deg);
+      }
+      50% {
+        transform: scale(1.1) rotate(5deg);
+        opacity: 1;
+        filter: hue-rotate(180deg);
+      }
+      75% {
+        transform: scale(1.05) rotate(3deg);
+        opacity: 0.9;
+        filter: hue-rotate(270deg);
+      }
+    }
+
+    @keyframes floatingParticles {
+      0% {
+        opacity: 0.3;
+        transform: translateY(0px) rotate(0deg);
+      }
+      25% {
+        opacity: 0.8;
+        transform: translateY(-20px) rotate(90deg);
+      }
+      50% {
+        opacity: 0.6;
+        transform: translateY(-40px) rotate(180deg);
+      }
+      75% {
+        opacity: 0.9;
+        transform: translateY(-20px) rotate(270deg);
+      }
+      100% {
+        opacity: 0.3;
+        transform: translateY(0px) rotate(360deg);
+      }
+    }
+
+    h1 {
+      font-size: 3rem;
+      background: linear-gradient(to right, #00c6ff, #0072ff);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      animation: glow 2s ease-in-out infinite alternate;
+    }
+
+    @keyframes glow {
+      from { text-shadow: 0 0 10px #00c6ff; }
+      to { text-shadow: 0 0 20px #0072ff, 0 0 30px #0072ff; }
+    }
+
+    .subheading {
+      font-size: 1.25rem;
+      color: #a0e9ff;
+      margin-bottom: 30px;
+    }
+
+    .nav-buttons {
+      margin-bottom: 25px;
+    }
+
+    .nav-buttons a {
+      display: inline-block;
+      margin: 8px;
+      text-decoration: none;
+      padding: 10px 25px;
+      border-radius: 30px;
+      font-weight: 500;
+      color: white;
+      background: linear-gradient(to right, #2F80ED, #7B61FF);
+      transition: 0.3s;
+    }
+
+    .nav-buttons a:hover {
+      background: linear-gradient(to right, #1abc9c, #27AE60);
+      color: #fff;
+    }
+
+    .form-container {
+      max-width: 500px;
+      margin: 0 auto;
+      background-color: rgba(255, 255, 255, 0.05);
+      padding: 30px;
+      border-radius: 15px;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    }
+
+    .form-control {
+      border-radius: 10px;
+      padding: 14px;
+      background-color: #ffffff10;
+      color: white;
+      border: 1px solid #00c6ff;
+    }
+
+    .form-control::placeholder {
+      color: #ccc;
+    }
+
+    .btn-apply {
+      background: linear-gradient(to right, #00c6ff, #0072ff);
+      color: white;
+      font-weight: bold;
+      padding: 12px 25px;
+      border: none;
+      border-radius: 50px;
+      margin-top: 15px;
+      transition: 0.3s;
+    }
+
+    .btn-apply:hover {
+      opacity: 0.85;
+      transform: scale(1.05);
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Join QuickFix</h1>
+  <p class="subheading">Tech-savvy? Eager to earn? Make an impact with your skills. 💡</p>
+
+  <div class="nav-buttons">
+    <a href="index.html">← Back to Home</a>
+    <a href="pricing.html">💰 View Pricing</a>
+  </div>
+
+  <form action="https://formsubmit.co/kelvin.om90@gmail.com" method="POST" class="form-container">
+    <input type="hidden" name="_next" value="/thankyou.html">
+    <input type="hidden" name="_captcha" value="false">
+    <input type="hidden" name="_subject" value="🚀 New Technician Application - QuickFix">
+    <input type="hidden" name="_template" value="table">
+
+    <div class="form-group mb-3">
+      <input type="text" name="name" class="form-control" placeholder="Your Full Name" required />
+    </div>
+
+    <div class="form-group mb-3">
+      <input type="email" name="email" class="form-control" placeholder="Email Address" required />
+    </div>
+
+    <div class="form-group mb-3">
+      <input type="text" name="college" class="form-control" placeholder="Your College/University" required />
+    </div>
+
+    <div class="form-group mb-3">
+      <input type="tel" name="mobile" class="form-control" placeholder="Mobile Number" pattern="[0-9]{10}" required />
+    </div>
+
+    <div class="form-group mb-3">
+      <input type="text" name="skills" class="form-control" placeholder="Your Tech Skills (e.g., laptop repair, network)" required />
+    </div>
+
+    <button type="submit" class="btn btn-apply">🚀 Apply Now</button>
+  </form>
+
+</body>
+</html>
